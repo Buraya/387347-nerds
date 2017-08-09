@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Валентина Бурая](https://up.htmlacademy.ru/htmlcss/18/user/387347).
-* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/).
 
 ---
 
