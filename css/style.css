@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  /*На лекции сказали если задали хоть 1 размер в px нет смысла в rem/em ???? */
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+.title-main{
+  font-size: 55px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.title-middle{
+  font-size: 42px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.title-mini{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
