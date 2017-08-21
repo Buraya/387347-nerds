@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия Nёrd's</title>
   </head>
   <body>
     <header class="main-header">
       <section class="container">
         <nav class="main-navigation">
-          <!-- Нужно ли оборачивать ссылку в контейнер ??? или это тоже навигация???-->
-          <a class="main-logo"  href="index.html">
+          <a class="main-logo">
             <img src="logo.jpeg" width="150" height="100" alt="Логотип дизайн-студии Nёrd's">
           </a>
           <ul class="site-navigation">
@@ -20,12 +20,12 @@
           </ul>
         </nav>
         <ul class="user-navigation">
-          <li><a href="#">Корзина покупок</a></li>
+          <li><a href="#">Корзина</a></li>
         </ul>
       </section>
     </header>
     <main>
-      <h1 class="visually-hidden">Дизайн-студия Nёrd's</h1>
+      <h1 class="visually-hidden title-main">Дизайн-студия Nёrd's</h1>
       <section class="top-part-main">
         <div class="slider container">
           <div class="slides-wrapper">
@@ -46,28 +46,28 @@
             </div>
           </div>
           <div class="slides-controls">
-            <button class="slides-dot" type="button"></button>
-            <button class="slides-dot" type="button"></button>
-            <button class="slides-dot" type="button"></button>
+            <button class="slides-dot" type="button">Текущий слайд - 1</button>
+            <button class="slides-dot" type="button">Текущий слайд - 2</button>
+            <button class="slides-dot" type="button">Текущий слайд - 3</button>
           </div>
         </div>
       </section>
       <div class="middle-part-main container">
         <section class="products-types">
-          <h2 class="visually-hidden">Наши продукты</h2>
+          <h2 class="visually-hidden title-middle">Наши продукты</h2>
           <ul class="product-list">
             <li class="product-item img-type-site">
-              <h3>Веб-сайты</h3>
+              <h3 class="tittle-mini">Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button red-button" href="#">Заказать</a>
             </li>
             <li class="product-item img-type-application">
-              <h3>Приложения</h3>
+              <h3 class="tittle-mini">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
               <a class="button green-button" href="#">Заказать</a>
             </li>
             <li class="product-item img-type-presentation">
-              <h3>Презентации</h3>
+              <h3 class="tittle-mini">Презентации</h3>
               <p>Вы даже не подозреваете насколько вы изумительны!</p>
               <a class="button yellow-button" href="#">Заказать</a>
             </li>
@@ -110,7 +110,7 @@
         </section>
       </div>
       <section class="bottom-part-main container">
-        <h2 class="visually-hidden">Наши работы</h2>
+        <h2 class="visually-hidden title-middle">Наши работы</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item img-portfolio-html">
             <a href="#">HTML academy</a>
@@ -129,7 +129,7 @@
     </main>
     <footer class="main-footer">
         <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="visually-hidden tittle-mini">Контакты</h2>
           <div class="map">
             <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
             <div class="container">
@@ -157,28 +157,28 @@
         </div>
     </footer>
 
-        <section class="modal-window">
-          <h2 class="letter-title">Напишите нам</h2>
-          <form action="#" method="post" class="letter">
-            <p class="letter-item">
-              <label>Ваше имя:
-                <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
-              </label>
-            </p>
-            <p class="letter-item">
-              <label>Ваш e-mail:
-                <input type="email" name="email" value="" placeholder="Для отправки ответа" required>
-              </label>
-            </p>
-            <p class="letter-item">
-              <label>Текст письма:<br>
-                <textarea name="text" rows="10" cols="100" placeholder="Текст письма" required></textarea>
-              </label>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-            <button class="close-button" type="button">Закрыть</button>
-          </form>
-        </section>
+    <section class="modal-window">
+      <h2 class="letter-title">Напишите нам</h2>
+      <form action="#" method="post" class="letter">
+        <p class="letter-item">
+          <label>Ваше имя:
+            <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+          </label>
+        </p>
+        <p class="letter-item">
+          <label>Ваш e-mail:
+            <input type="email" name="email" value="" placeholder="Для отправки ответа" required>
+          </label>
+        </p>
+        <p class="letter-item">
+          <label>Текст письма:<br>
+            <textarea name="text" rows="10" cols="100" placeholder="Текст письма" required></textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="close-button" type="button">Закрыть</button>
+      </form>
+    </section>
 
   </body>
 </html>
