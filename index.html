@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>Дизайн-студия Nёrd's</title>
   </head>
   <body>
@@ -57,17 +58,17 @@
           <h2 class="visually-hidden title-middle">Наши продукты</h2>
           <ul class="product-list">
             <li class="product-item img-type-site">
-              <h3 class="tittle-mini">Веб-сайты</h3>
+              <h3 class="title-mini">Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button red-button" href="#">Заказать</a>
             </li>
             <li class="product-item img-type-application">
-              <h3 class="tittle-mini">Приложения</h3>
+              <h3 class="title-mini">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
               <a class="button green-button" href="#">Заказать</a>
             </li>
             <li class="product-item img-type-presentation">
-              <h3 class="tittle-mini">Презентации</h3>
+              <h3 class="title-mini">Презентации</h3>
               <p>Вы даже не подозреваете насколько вы изумительны!</p>
               <a class="button yellow-button" href="#">Заказать</a>
             </li>
@@ -90,7 +91,9 @@
             </ul>
           </div>
           <div class="statistics">
-            <!-- Логотип или картинка -->
+            <div class="nerds-illustration">
+              <img src="img/nerds-illustration" width="360" height="208" alt="Логотип Nёrd's">
+            </div>
             <b class="mini-title">
               С 2004 года любим точность во всем:
             </b>
@@ -128,33 +131,33 @@
       </section>
     </main>
     <footer class="main-footer">
-        <section class="contacts">
-          <h2 class="visually-hidden tittle-mini">Контакты</h2>
-          <div class="map">
-            <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-            <div class="container">
-              <div class="contacts-list">
-                <b class="mini-title">Nёrds design studio</b>
-                <p>191186, Санкт-Петербург,<br>
-                  ул. Б. Конюшенная, д.19/8<br>
-                  <a href="tel:+78122757575">+7(812)275-75-75</a>
-                </p>
-                <a class="button letter-button" href="#">Напишите нам</a>
-              </div>
+      <section class="contacts">
+        <h2 class="visually-hidden tittle-mini">Контакты</h2>
+        <div class="map">
+          <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+          <div class="container">
+            <div class="contacts-list">
+              <b class="mini-title">Nёrds design studio</b>
+              <p>191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д.19/8<br>
+                <a href="tel:+78122757575">+7(812)275-75-75</a>
+              </p>
+              <a class="button letter-button" href="#">Напишите нам</a>
             </div>
           </div>
-        </section>
-        <div class="footer-social container">
-          <ul class="social-list">
-            <li><a class="social-button" href="#">VK</a></li>
-            <li><a class="social-button" href="#">Facebook</a></li>
-            <li><a class="social-button" href="#">Instagram</a></li>
-          </ul>
-          <p class="footer-autlet">
-            <b class="footer-title">Давайте дружить, это выгодно!</b>
-            Скидка 10% для друзей из социальных сетей.
-          </p>
         </div>
+      </section>
+      <div class="footer-social container">
+        <ul class="social-list">
+          <li><a class="social-button" href="#">VK</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+        </ul>
+        <p class="footer-autlet">
+          <b class="footer-title">Давайте дружить, это выгодно!</b>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
     </footer>
 
     <section class="modal-window">

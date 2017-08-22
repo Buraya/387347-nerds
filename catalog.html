@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>Каталог дизайн-студии Nёrd's</title>
   </head>
   <body>
@@ -37,57 +39,49 @@
             </div>
             <div class="filter-part">
               <b class="title-mini">Сетка:</b>
-              <p class="grid-item">
-                <label>
-                  <input type="radio" name="grid" value="adapt-grid">
-                  Адаптивная
-                </label>
-              </p>
-              <p class="grid-item">
-                <label>
-                  <input type="radio" name="grid" value="fix-grid" checked>
-                  Фиксированная
-                </label>
-              </p>
-              <p class="grid-item">
-                <label>
-                  <input type="radio" name="grid" value="gum">
-                  Резиновая
-                </label>
-              </p>
+              <label class="grid-item">
+                <input type="radio" name="grid" value="adapt-grid">
+                <span class="title-grid-item"></span>
+                Адаптивная
+              </label>
+              <label class="grid-item">
+                <input type="radio" name="grid" value="fix-grid" checked>
+                <span class="title-grid-item"></span>
+                Фиксированная
+              </label>
+              <label class="grid-item">
+                <input type="radio" name="grid" value="gum">
+                <span class="title-grid-item"></span>
+                Резиновая
+              </label class="grid-item">
             </div>
             <div class="filter-part">
               <b class="title-mini">Особенности:</b>
-              <p class="features-item">
-                <label>
-                  <input type="checkbox" name="features[]" value="slider" checked>
-                  Слайдер
-                </label>
-              </p>
-              <p class="features-item">
-                <label>
-                  <input type="checkbox" name="features[]" value="block-advantage">
-                  Блок преимуществ
-                </label>
-              </p>
-              <p class="features-item">
-                <label>
-                  <input type="checkbox" name="features[]" value="news" checked>
-                  Новости
-                </label>
-              </p>
-              <p class="features-item">
-                <label>
-                  <input type="checkbox" name="features[]" value="gallery">
-                  Галерея
-                </label>
-              </p>
-              <p class="features-item">
-                <label>
-                  <input type="checkbox" name="features[]" value="basket">
-                  Корзина
-                </label>
-              </p>
+              <label class="features-item">
+                <input type="checkbox" name="features[]" value="slider" checked>
+                <span class="title-features-item"></span>
+                Слайдер
+              </label>
+              <label class="features-item">
+                <input type="checkbox" name="features[]" value="block-advantage">
+                <span class="title-features-item"></span>
+                Блок преимуществ
+              </label>
+              <label class="features-item">
+                <input type="checkbox" name="features[]" value="news" checked>
+                <span class="title-features-item"></span>
+                Новости
+              </label class="features-item">
+              <label>
+                <input type="checkbox" name="features[]" value="gallery">
+                <span class="title-features-item"></span>
+                Галерея
+              </label>
+              <label class="features-item">
+                <input type="checkbox" name="features[]" value="basket">
+                <span class="title-features-item"></span>
+                Корзина
+              </label>
             </div>
             <button class="button" type="submit">Показать</button>
           </form>
@@ -108,78 +102,78 @@
             </ul>
           </div>
           <ul class="catalog-list">
-            <article  class="catalog-item">
-              <li>
+            <li>
+              <article  class="catalog-item">
                 <img src="img.jpeg" width="100" height="150" alt="Sedona">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-mini">Sedona</h3>
                     <p class="product-type">Информационный сайт для туристов</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
-            <article  class="catalog-item">
-              <li>
+              </article>
+            </li>
+            <li>
+              <article  class="catalog-item">
+                <img src="img.jpeg" width="100" height="150" alt="Pink App">
                 <div class="catalog-item-hover">
-                  <img src="img.jpeg" width="100" height="150" alt="Pink App">
                   <a href="#">
                     <h3 class="title-mini">Pink App</h3>
                     <p class="product-type">Продуктовый лендинг приложения для iOS и Android</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
-            <article  class="catalog-item">
-              <li>
+              </article>
+            </li>
+            <li>
+              <article  class="catalog-item">
+                <img src="img.jpeg" width="100" height="150" alt="Barbershop">
                 <div class="catalog-item-hover">
-                  <img src="img.jpeg" width="100" height="150" alt="Barbershop">
                   <a href="#">
                     <h3 class="title-mini">Barbershop</h3>
                     <p class="product-type">Сайт салоны красоты. Для мужчин, да.</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
-            <article  class="catalog-item">
-              <li>
+              </article>
+            </li>
+            <li>
+              <article  class="catalog-item">
+                <img src="img.jpeg" width="100" height="150" alt="MISHKA">
                 <div class="catalog-item-hover">
-                  <img src="img.jpeg" width="100" height="150" alt="MISHKA">
                   <a href="#">
                     <h3 class="title-mini">MISHKA</h3>
                     <p class="product-type">Интернет-магазин  вязаных игрушек</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
-            <article  class="catalog-item">
-              <li>
+              </article>
+            </li>
+            <li>
+              <article  class="catalog-item">
+                <img src="img.jpeg" width="100" height="150" alt="A Plus">
                 <div class="catalog-item-hover">
-                  <img src="img.jpeg" width="100" height="150" alt="A Plus">
                   <a href="#">
                     <h3 class="title-mini">A Plus</h3>
                     <p class="product-type">Лендинг курсов повышения квалификации</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
-            <article  class="catalog-item">
-              <li>
+              </article>
+            </li>
+            <li>
+              <article  class="catalog-item">
+                <img src="img.jpeg" width="100" height="150" alt="КВАСТ">
                 <div class="catalog-item-hover">
-                  <img src="img.jpeg" width="100" height="150" alt="КВАСТ">
                   <a href="#">
                     <h3 class="title-mini">КВАСТ</h3>
                     <p class="product-type">Промо-сайт производителя крафтового кваса</p>
+                    <div class="product-type-price">9 900 Руб.</div>
                   </a>
-                  <a class="button" href="basket.html">9 900 Руб.</a>
                 </div>
-              </li>
-            </article>
+              </article>
+            </li>
           </ul>
           <ol class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -191,33 +185,33 @@
       </div>
     </main>
     <footer class="main-footer">
-        <section class="contacts">
-          <h2 class="visually-hidden title-middle">Контакты</h2>
-          <div class="map">
-            <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-            <div class="container">
-              <div class="contacts-list">
-                <b class="mini-title">Nёrds design studio</b>
-                <p>191186, Санкт-Петербург,<br>
-                  ул. Б. Конюшенная, д.19/8<br>
-                  <a href="tel:+78122757575">+7(812)275-75-75</a>
-                </p>
-                <a class="button letter-button" href="#">Напишите нам</a>
-              </div>
+      <section class="contacts">
+        <h2 class="visually-hidden title-middle">Контакты</h2>
+        <div class="map">
+          <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+          <div class="container">
+            <div class="contacts-list">
+              <b class="mini-title">Nёrds design studio</b>
+              <p>191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д.19/8<br>
+                <a href="tel:+78122757575">+7(812)275-75-75</a>
+              </p>
+              <a class="button letter-button" href="#">Напишите нам</a>
             </div>
           </div>
-        </section>
-        <div class="footer-social container">
-          <ul class="social-list">
-            <li><a class="social-button" href="#">VK</a></li>
-            <li><a class="social-button" href="#">Facebook</a></li>
-            <li><a class="social-button" href="#">Instagram</a></li>
-          </ul>
-          <p class="footer-autlet">
-            <b class="footer-title">Давайте дружить, это выгодно!</b>
-            Скидка 10% для друзей из социальных сетей.
-          </p>
         </div>
+      </section>
+      <div class="footer-social container">
+        <ul class="social-list">
+          <li><a class="social-button" href="#">VK</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+        </ul>
+        <p class="footer-autlet">
+          <b class="footer-title">Давайте дружить, это выгодно!</b>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
     </footer>
 
     <section class="modal-window">
