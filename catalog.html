@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <title>Каталог дизайн-студии Nёrd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <section class="container">
         <nav class="main-navigation">
           <a class="main-logo"  href="index.html">
-            <img src="logo.jpeg" width="150" height="100" alt="Логотип дизайн-студии Nёrd's">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrd's">
           </a>
           <ul class="site-navigation">
             <li><a href="#">Студия</a></li>
@@ -27,18 +28,18 @@
     </header>
     <main class="container">
       <div class="catalog-header">
-        <h1 class="main-title">Магазин готовых шаблонов</h1>
+        <h1 class="title-main">Магазин готовых шаблонов</h1>
       </div>
       <div class="catalog-block">
         <section class="filters">
-          <h2 class="visually-hidden title-middle">Фильтр</h2>
+          <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter" action="#" method="get">
             <div class="filter-part">
-              <b class="title-mini">Стоимость:</b>
+              <b class="title-filter">Стоимость:</b>
               <!-- Добавить фильтр-диапозон-->
             </div>
             <div class="filter-part">
-              <b class="title-mini">Сетка:</b>
+              <b class="title-filter">Сетка:</b>
               <label class="grid-item">
                 <input type="radio" name="grid" value="adapt-grid">
                 <span class="title-grid-item"></span>
@@ -56,7 +57,7 @@
               </label class="grid-item">
             </div>
             <div class="filter-part">
-              <b class="title-mini">Особенности:</b>
+              <b class="title-filter">Особенности:</b>
               <label class="features-item">
                 <input type="checkbox" name="features[]" value="slider" checked>
                 <span class="title-features-item"></span>
@@ -83,14 +84,14 @@
                 Корзина
               </label>
             </div>
-            <button class="button" type="submit">Показать</button>
+            <button class="button button-grey" type="submit">Показать</button>
           </form>
         </section>
         <section class="main-catalog">
           <h2 class="visually-hidden title-middle">Каталог</h2>
           <div class="sort">
-            <h3 class="visually-hidden tittle-mini">Сортировка</h3>
-            <b class="mini-title">Сортировать:</b>
+            <h3 class="visually-hidden title-filter">Сортировка</h3>
+            <b class="title-filter">Сортировать:</b>
             <ul class="sort-list">
               <li><a class="sort-item sort-current" href="#">По цене</a></li>
               <li><a class="sort-item" href="#">По типу</a></li>
@@ -104,11 +105,11 @@
           <ul class="catalog-list">
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="Sedona">
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">Sedona</h3>
-                    <p class="product-type">Информационный сайт для туристов</p>
+                    <h3 class="title-catalog-item">Sedona</h3>
+                    <p class="product-type title-mini">Информационный сайт для туристов</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -116,11 +117,11 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="Pink App">
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">Pink App</h3>
-                    <p class="product-type">Продуктовый лендинг приложения для iOS и Android</p>
+                    <h3 class="title-catalog-item">Pink App</h3>
+                    <p class="product-type title-mini">Продуктовый лендинг приложения для iOS и Android</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -128,11 +129,11 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="Barbershop">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">Barbershop</h3>
-                    <p class="product-type">Сайт салоны красоты. Для мужчин, да.</p>
+                    <h3 class="title-catalog-item">Barbershop</h3>
+                    <p class="product-type title-mini">Сайт салоны красоты. Для мужчин, да.</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -140,11 +141,11 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="MISHKA">
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">MISHKA</h3>
-                    <p class="product-type">Интернет-магазин  вязаных игрушек</p>
+                    <h3 class="title-catalog-itemi">MISHKA</h3>
+                    <p class="product-type title-mini">Интернет-магазин  вязаных игрушек</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -152,11 +153,11 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="A Plus">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">A Plus</h3>
-                    <p class="product-type">Лендинг курсов повышения квалификации</p>
+                    <h3 class="ttitle-catalog-item">A Plus</h3>
+                    <p class="product-type title-mini">Лендинг курсов повышения квалификации</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -164,11 +165,11 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img.jpeg" width="100" height="150" alt="КВАСТ">
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
                 <div class="catalog-item-hover">
                   <a href="#">
-                    <h3 class="title-mini">КВАСТ</h3>
-                    <p class="product-type">Промо-сайт производителя крафтового кваса</p>
+                    <h3 class="title-catalog-item">КВАСТ</h3>
+                    <p class="product-type title-mini">Промо-сайт производителя крафтового кваса</p>
                     <div class="product-type-price">9 900 Руб.</div>
                   </a>
                 </div>
@@ -188,7 +189,7 @@
       <section class="contacts">
         <h2 class="visually-hidden title-middle">Контакты</h2>
         <div class="map">
-          <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+          <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
           <div class="container">
             <div class="contacts-list">
               <b class="mini-title">Nёrds design studio</b>
@@ -196,7 +197,7 @@
                 ул. Б. Конюшенная, д.19/8<br>
                 <a href="tel:+78122757575">+7(812)275-75-75</a>
               </p>
-              <a class="button letter-button" href="#">Напишите нам</a>
+              <a class="button button-red letter-button" href="#">Напишите нам</a>
             </div>
           </div>
         </div>
@@ -232,7 +233,7 @@
             <textarea name="text" rows="10" cols="100" placeholder="Текст письма" required></textarea>
           </label>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-red" type="submit">Отправить</button>
         <button class="close-button" type="button">Закрыть</button>
       </form>
     </section>

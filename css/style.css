@@ -4,8 +4,7 @@ body{
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  /*На лекции сказали если задали хоть 1 размер в px нет смысла в rem/em ???? */
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
   color: #000000;
 
@@ -16,24 +15,169 @@ body{
 
 a{
   text-decoration: none;
+  color: #000000;
+}
+
+ul{
+  text-decoration: none;
 }
 
 .title-main{
   font-size: 55px;
-  font-weight: 700;
-  color: #000000;
 }
 
-.title-middle{
-  font-size: 42px;
+.title-product-types{
+  font-size: 24px;
+  line-height: 1.25;
   font-weight: 700;
-  color: #000000;
+  text-transform: uppercase;
+}
+
+.tittle-about-studio,
+.title-letter{
+  font-size: 45px;
+}
+
+.title-bold{
+  font-weight: 700;
+}
+
+.title-contacts,
+.title-filter,
+.title-catalog-item{
+  font-size: 18px;
+  line-height: 1.67;
+  text-transform: uppercase;
 }
 
 .title-mini{
-  font-size: 24px;
-  line-height: 30px;
+  line-height:1.13;
+}
+
+.title-mini-bold{
+  line-height:1.13;
   font-weight: 700;
-  color: #000000;
+}
+
+.title-middle{
+  font-size: 36px;
+}
+
+.main-header,
+.top-part-main{
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation{
+  line-height: 1.88;
   text-transform: uppercase;
+  list-style: none;
+  }
+
+/*не работает
+.main-logo a:hover,
+.main-logo a:focus{
+  fill: #ffffff;
+  fill-opacity: 0.2;
+}
+
+.main-logo a:active{
+  fill: #ffffff;
+  fill-opacity: 0.7;
+}*/
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus{
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active{
+  color: #a6a6a6;
+}
+
+.navigation-current a{
+  border-bottom:1px solid #d7373b;
+}
+
+.button{
+    text-transform: uppercase;
+}
+
+
+.button-red{
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.button-red:hover,
+.button-red:focus{
+  background-color: #e74246;
+}
+
+.button-red:active{
+  background-color: #d7373b;
+  color: rgba(255,255,255,.3);
+}
+
+.button-green{
+  background-color: #00ca74;
+  color: #ffffff;
+}
+
+.button-green:hover,
+.button-green:focus{
+  background-color: #00bc6c;
+}
+
+.button-green:active{
+  background-color: #00aa62;
+  color: rgba(255,255,255,.3);
+}
+
+.button-yellow{
+  background-color: #efc84a;
+  color: #ffffff;
+}
+
+.button-yellow:hover,
+.button-yellow:focus{
+  background-color: #eab533;
+}
+
+.button-yellow:active{
+  background-color: #e5a722;
+  color: rgba(255,255,255,.3);
+}
+
+.button-grey{
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.button-grey:hover,
+.button-grey:focus{
+  background-color: #dfdfdf;
+}
+
+.button-grey:active{
+  background-color: #bfbfbf;
+  color: rgba(0,0,0,.3)
+}
+
+.product-type-price{
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.product-type-price:hover,
+.product-type-price:focus{
+  background-color: #e74246;
+}
+
+.product-type-price:active{
+  background-color: #d7373b;
 }

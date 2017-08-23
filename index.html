@@ -2,21 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <title>Дизайн-студия Nёrd's</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <title>Дизайн-студия Nёrd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <section class="container">
         <nav class="main-navigation">
           <a class="main-logo">
-            <img src="logo.jpeg" width="150" height="100" alt="Логотип дизайн-студии Nёrd's">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nёrd's">
           </a>
           <ul class="site-navigation">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li class="navigation-current"><a href="catalog.html">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -26,24 +27,33 @@
       </section>
     </header>
     <main>
-      <h1 class="visually-hidden title-main">Дизайн-студия Nёrd's</h1>
+      <h1 class="visually-hidden">Дизайн-студия Nёrd's</h1>
       <section class="top-part-main">
         <div class="slider container">
           <div class="slides-wrapper">
-            <div class="slide slide-nomber">
-              <b class="slider-title">Долго, дорого, скрупулезно.</b>
+            <div class="slide-nomber">
+              <b class="title-main">Долго, дорого, скрупулезно.</b>
               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider-button" href="#">Узнать больше</a>
+              <a class="button button-red" href="#">Узнать больше</a>
+              <p class="slide-image">
+                <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд-1. Долго, дорого, скрупулезно.">
+              </p>
             </div>
-            <div class="slide slide-nomber">
-              <b class="slider-title">Любим математику как никто другой</b>
+            <div class="slide-nomber">
+              <b class="title-main">Любим математику как никто другой</b>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-button" href="#">Узнать больше</a>
+              <a class="button button-red" href="#">Узнать больше</a>
+              <p class="slide-image">
+                <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд-2. Любим математику как никто другой.">
+              </p>
             </div>
-            <div class="slide slide-nomber">
-              <b class="slider-title">Только ночь, только хардкор</b>
+            <div class="slide-nomber">
+              <b class="title-main">Только ночь, только хардкор</b>
               <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider-button" href="#">Узнать больше</a>
+              <a class="button button-red" href="#">Узнать больше</a>
+              <p class="slide-image">
+                <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд-3. Только ночь, только хардкор.">
+              </p>
             </div>
           </div>
           <div class="slides-controls">
@@ -54,34 +64,43 @@
         </div>
       </section>
       <div class="middle-part-main container">
-        <section class="products-types">
-          <h2 class="visually-hidden title-middle">Наши продукты</h2>
+        <section class="product-types">
+          <h2 class="visually-hidden">Наши продукты</h2>
           <ul class="product-list">
             <li class="product-item img-type-site">
-              <h3 class="title-mini">Веб-сайты</h3>
+              <h3 class="title-product-types">Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button red-button" href="#">Заказать</a>
+              <a class="button button-red" href="#">Заказать</a>
+              <p class="product-item-image">
+                <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+              </p>
             </li>
             <li class="product-item img-type-application">
-              <h3 class="title-mini">Приложения</h3>
+              <h3 class="title-product-types">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-              <a class="button green-button" href="#">Заказать</a>
+              <a class="button button-green" href="#">Заказать</a>
+              <p class="product-item-image">
+                <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+              </p>
             </li>
             <li class="product-item img-type-presentation">
-              <h3 class="title-mini">Презентации</h3>
+              <h3 class="title-product-types">Презентации</h3>
               <p>Вы даже не подозреваете насколько вы изумительны!</p>
-              <a class="button yellow-button" href="#">Заказать</a>
+              <a class="button button-yellow" href="#">Заказать</a>
+              <p class="product-item-image">
+                <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+              </p>
             </li>
           </ul>
         </section>
         <section class="about-studio">
           <div class="about-studio-text">
-            <b class="about-studio-tittle">
+            <b class="tittle-about-studio">
               Мы - маленькая, но гордая дизайн-студия из Краснодара.
             </b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <b class="mini-title">
+            <b class="title-bold">
               Выполняем заказы на разработку:
             </b>
             <ul class="work-list">
@@ -91,10 +110,10 @@
             </ul>
           </div>
           <div class="statistics">
-            <div class="nerds-illustration">
-              <img src="img/nerds-illustration" width="360" height="208" alt="Логотип Nёrd's">
-            </div>
-            <b class="mini-title">
+            <p class="nerds-illustration">
+              <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип Nёrd's">
+            </p>
+            <b class="title-bold">
               С 2004 года любим точность во всем:
             </b>
             <table class="statistics-table">
@@ -116,33 +135,47 @@
         <h2 class="visually-hidden title-middle">Наши работы</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item img-portfolio-html">
-            <a href="#">HTML academy</a>
+            <a href="#">
+              <img class="portfolio-item-image" src="img/logo-1.png" width="260" height="180" alt="HTML academy">
+              HTML academy
+            </a>
           </li>
           <li class="portfolio-item portfolio-barber">
-            <a href="#">Barbershop</a>
+            <a href="#">
+              <img class="portfolio-item-image" src="img/logo-2.png" width="260" height="180" alt="Barbershop">
+              Barbershop
+            </a>
           </li>
           <li class="portfolio-item portfolio-pink">
-            <a href="#">Pink"</a>
+            <a href="#">
+              <img class="portfolio-item-image" src="img/logo-3.png" width="260" height="180" alt="Pink">
+              Pink
+            </a>
           </li>
           <li class="portfolio-item portfolio-mishka">
-            <a href="#">Mishka</a>
+            <a href="#">
+              <img class="portfolio-item-image" src="img/logo-4.png" width="260" height="180" alt="Mishka">
+              Mishka
+            </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <h2 class="visually-hidden tittle-mini">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="map">
-          <img src="img/map.jpeg" width="800" height="300" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+          <img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
           <div class="container">
             <div class="contacts-list">
-              <b class="mini-title">Nёrds design studio</b>
-              <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д.19/8<br>
-                <a href="tel:+78122757575">+7(812)275-75-75</a>
+              <b class="title-contacts">Nёrds design studio</b>
+              <p class="title-mini">191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д.19/8
               </p>
-              <a class="button letter-button" href="#">Напишите нам</a>
+              <p>
+                <a class="title-mini" href="tel:+78122757575">+7(812)275-75-75</a>
+              </p>
+              <a class="button button-red letter-button" href="#">Напишите нам</a>
             </div>
           </div>
         </div>
@@ -154,31 +187,31 @@
           <li><a class="social-button" href="#">Instagram</a></li>
         </ul>
         <p class="footer-autlet">
-          <b class="footer-title">Давайте дружить, это выгодно!</b>
+          <b class="title-middle">Давайте дружить, это выгодно!</b>
           Скидка 10% для друзей из социальных сетей.
         </p>
       </div>
     </footer>
 
     <section class="modal-window">
-      <h2 class="letter-title">Напишите нам</h2>
+      <h2 class="title-letter">Напишите нам</h2>
       <form action="#" method="post" class="letter">
         <p class="letter-item">
-          <label>Ваше имя:
+          <label class="title-mini-bold">Ваше имя:
             <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
           </label>
         </p>
         <p class="letter-item">
-          <label>Ваш e-mail:
+          <label class="title-mini-bold">Ваш e-mail:
             <input type="email" name="email" value="" placeholder="Для отправки ответа" required>
           </label>
         </p>
         <p class="letter-item">
-          <label>Текст письма:<br>
+          <label class="title-mini-bold">Текст письма:<br>
             <textarea name="text" rows="10" cols="100" placeholder="Текст письма" required></textarea>
           </label>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-red" type="submit">Отправить</button>
         <button class="close-button" type="button">Закрыть</button>
       </form>
     </section>
