@@ -1,447 +1,447 @@
-/ *! Normalize.css v7.0.0 | Лицензия MIT | Github.com/necolas/normalize.css * /
+﻿/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/ * Документ
-   ================================================== ======================== * *
+/* Document
+   ========================================================================== */
 
-/ **
- * 1. Исправьте высоту строки во всех браузерах.
- * 2. Запретить корректировку размера шрифта после изменения ориентации
- * IE на Windows Phone и в iOS.
- * /
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
 
-Html {
-  Высота линии: 1,15; / * 1 * /
-  -ms-text-size-adjust: 100%; / * 2 * /
-  -webkit-text-size-adjust: 100%; / * 2 * /
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/ * Разделы
-   ================================================== ======================== * *
+/* Sections
+   ========================================================================== */
 
-/ **
- * Удалите маржу во всех браузерах (упрямый).
- * /
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
 
-Тело {
-  Margin: 0;
+body {
+  margin: 0;
 }
 
-/ **
- * Добавить правильный дисплей в IE 9-.
- * /
+/**
+ * Add the correct display in IE 9-.
+ */
 
-статья,
-в стороне,
-сноска,
-заголовок,
-нав,
-раздел {
-  Display: block;
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
 
-/ **
- * Исправьте размер шрифта и маржу на элементах `h1` в разделе` section` и
- * Контексты статьи в браузерах Chrome, Firefox и Safari.
- * /
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 
-H1 {
-  Font-size: 2em;
-  Margin: 0.67em 0;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-/ * Группировка содержимого
-   ================================================== ======================== * *
+/* Grouping content
+   ========================================================================== */
 
-/ **
- * Добавить правильный дисплей в IE 9-.
- * 1. Добавьте правильный IE в IE.
- * /
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
 
 figcaption,
-фигура,
-Main {/ * 1 * /
-  Display: block;
+figure,
+main { /* 1 */
+  display: block;
 }
 
-/ **
- * Добавьте правильное поле в IE 8.
- * /
+/**
+ * Add the correct margin in IE 8.
+ */
 
-Фигура {
-  Margin: 1em 40px;
+figure {
+  margin: 1em 40px;
 }
 
-/ **
- * 1. Добавьте правильный размер окна в Firefox.
- * 2. Покажите переполнение в Edge и IE.
- * /
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 
-Hr {
-  Box-size: content-box; / * 1 * /
-  Высота: 0; / * 1 * /
-  Переполнение: видимое; / * 2 * /
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
-/ **
- * 1. Исправить наследование и масштабирование размера шрифта во всех браузерах.
- * 2. Исправить нечетный размер шрифта `em` во всех браузерах.
- * /
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 
-Pre {
-  Font-family: monospace, monospace; / * 1 * /
-  Font-size: 1em; / * 2 * /
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
-/ * Текстовая семантика
-   ================================================== ======================== * *
+/* Text-level semantics
+   ========================================================================== */
 
-/ **
- * 1. Снимите серый фон с активных ссылок в IE 10.
- * 2. Удалите пробелы в ссылках в iOS 8+ и Safari 8+.
- * /
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
 
-A {
-  Background-color: transparent; / * 1 * /
-  -webkit-text-decoration-skip: объекты; / * 2 * /
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
 }
 
-/ **
- * 1. Снимите нижнюю границу в Chrome 57- и Firefox 39-.
- * 2. Добавьте правильное оформление текста в Chrome, Edge, IE, Opera и Safari.
- * /
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 
-Abbr [название] {
-  Border-bottom: none; / * 1 * /
-  Text-decoration: подчеркивание; / * 2 * /
-  Text-decoration: underline dotted; / * 2 * /
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
-/ **
- * Предотвратите дублирование приложения «смелее» по следующему правилу в Safari 6.
- * /
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
 
-б,
-Сильный {
-  Font-weight: inherit;
+b,
+strong {
+  font-weight: inherit;
 }
 
-/ **
- * Добавьте правильный шрифт в Chrome, Edge и Safari.
- * /
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
 
-б,
-Сильный {
-  Font-weight: bolder;
+b,
+strong {
+  font-weight: bolder;
 }
 
-/ **
- * 1. Исправить наследование и масштабирование размера шрифта во всех браузерах.
- * 2. Исправить нечетный размер шрифта `em` во всех браузерах.
- * /
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 
-код,
-KBD,
-Samp {
-  Font-family: monospace, monospace; / * 1 * /
-  Font-size: 1em; / * 2 * /
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
-/ **
- * Добавьте правильный стиль шрифта в Android 4.3.
- * /
+/**
+ * Add the correct font style in Android 4.3-.
+ */
 
-Dfn {
-  Font-style: italic;
+dfn {
+  font-style: italic;
 }
 
-/ **
- * Добавьте правильный фон и цвет в IE 9-.
- * /
+/**
+ * Add the correct background and color in IE 9-.
+ */
 
-отметка {
-  Background-color: # ff0;
-  Цвет: # 000;
+mark {
+  background-color: #ff0;
+  color: #000;
 }
 
-/ **
- * Добавьте правильный размер шрифта во всех браузерах.
- * /
+/**
+ * Add the correct font size in all browsers.
+ */
 
-маленький {
-  Размер шрифта: 80%;
+small {
+  font-size: 80%;
 }
 
-/ **
- * Не позволяйте элементам `sub` и` sup` влиять на высоту строки в
- * Все браузеры.
- * /
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 
-к югу,
-Sup {
-  Размер шрифта: 75%;
-  Line-height: 0;
-  Позиция: относительная;
-  Vertical-align: базовый;
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
-Sub {
-  Bottom: -0.25em;
+sub {
+  bottom: -0.25em;
 }
 
-Sup {
-  Top: -0.5em;
+sup {
+  top: -0.5em;
 }
 
-/ * Встроенный контент
-   ================================================== ======================== * *
+/* Embedded content
+   ========================================================================== */
 
-/ **
- * Добавить правильный дисплей в IE 9-.
- * /
+/**
+ * Add the correct display in IE 9-.
+ */
 
-аудио,
-видео {
-  Display: inline-block;
+audio,
+video {
+  display: inline-block;
 }
 
-/ **
- * Добавьте правильный дисплей в iOS 4-7.
- * /
+/**
+ * Add the correct display in iOS 4-7.
+ */
 
-Audio: not ([controls]) {
-  Display: none;
-  Высота: 0;
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
 
-/ **
- * Удалите границу изображений внутри ссылок в IE 10-.
- * /
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
 
-Img {
-  Border-style: none;
+img {
+  border-style: none;
 }
 
-/ **
- * Скрыть переполнение в IE.
- * /
+/**
+ * Hide the overflow in IE.
+ */
 
-Svg: not (: root) {
-  Переполнение: скрыто;
+svg:not(:root) {
+  overflow: hidden;
 }
 
-/ * Формы
-   ================================================== ======================== * *
+/* Forms
+   ========================================================================== */
 
-/ **
- * 1. Измените стили шрифтов во всех браузерах (упрямо).
- * 2. Удалите маржу в Firefox и Safari.
- * /
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
 
-кнопка,
-вход,
-OPTGROUP,
-Выбрать,
-Textarea {
-  Font-family: sans-serif; / * 1 * /
-  Размер шрифта: 100%; / * 1 * /
-  Высота линии: 1,15; / * 1 * /
-  Margin: 0; / * 2 * /
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
-/ **
- * Показывать переполнение в IE.
- * 1. Покажите переполнение в Edge.
- * /
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 
-кнопка,
-Ввод {/ * 1 * /
-  Переполнение: видимое;
+button,
+input { /* 1 */
+  overflow: visible;
 }
 
-/ **
- * Удалить наследование текстового преобразования в Edge, Firefox и IE.
- * 1. Удалите наследование текстового преобразования в Firefox.
- * /
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
 
-кнопка,
-Выберите {/ * 1 * /
-  Text-transform: none;
+button,
+select { /* 1 */
+  text-transform: none;
 }
 
-/ **
- * 1. Предотвратите ошибку WebKit, где (2) уничтожает собственные `audio` и` video`
- * Элементы управления в Android 4.
- * 2. Исправьте неспособность стилировать интерактивные типы в iOS и Safari.
- * /
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
 
-кнопка,
-Html [type = "button"], / * 1 * /
-[Тип = "сброс"],
-[Type = "submit"] {
-  -webkit-appearance: кнопка; / * 2 * /
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
 }
 
-/ **
- * Удалите внутреннюю границу и дополнение в Firefox.
- * /
+/**
+ * Remove the inner border and padding in Firefox.
+ */
 
-Кнопка :: - Мос-фокус-внутренний,
-[= "Кнопка" тип] :: - Мос-фокус-внутренний,
-[Тип = "сброс"] :: - Мос-фокус-внутренний,
-[Type = "submit"] :: - moz-focus-inner {
-  Border-style: none;
-  Заполнение: 0;
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
 }
 
-/ **
- * Восстановить стили фокуса, отмененные предыдущим правилом.
- * /
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
 
-Кнопка: -moz-focusring,
-[Тип = "кнопка"]: - Мос-focusring,
-[Тип = "сброс"]: - Мос-focusring,
-[Type = "submit"]: - moz-focusring {
-  Контур: 1px пунктирный ButtonText;
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
-/ **
- * Исправьте дополнение в Firefox.
- * /
+/**
+ * Correct the padding in Firefox.
+ */
 
-Fieldset {
-  Padding: 0.35em 0.75em 0.625em;
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
 }
 
-/ **
- * 1. Исправьте перенос текста в Edge и IE.
- * 2. Исправьте наследование цвета из элементов `fieldset` в IE.
- * 3. Удалите прокладку, чтобы разработчики не были пойманы, когда они обнуляли
- * Элементы `fieldset` во всех браузерах.
- * /
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
 
-Легенда {
-  Box-size: border-box; / * 1 * /
-  Color: inherit; / * 2 * /
-  Display: table; / * 1 * /
-  Max-width: 100%; / * 1 * /
-  Заполнение: 0; / * 3 * /
-  White-space: normal; / * 1 * /
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
-/ **
- * 1. Добавьте правильный экран в IE 9-.
- * 2. Добавьте правильное вертикальное выравнивание в Chrome, Firefox и Opera.
- * /
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 
-прогресс {
-  Display: inline-block; / * 1 * /
-  Vertical-align: базовый; / * 2 * /
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
-/ **
- * Удалите вертикальную полосу прокрутки по умолчанию в IE.
- * /
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
 
-Textarea {
-  Переполнение: авто;
+textarea {
+  overflow: auto;
 }
 
-/ **
- * 1. Добавьте правильный размер ящика в IE 10-.
- * 2. Удалите прокладку в IE 10-.
- * /
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
 
-[Тип = "флажок"],
-[Type = "radio"] {
-  Box-size: border-box; / * 1 * /
-  Заполнение: 0; / * 2 * /
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
-/ **
- * Исправьте стиль курсора кнопок увеличения и уменьшения в Chrome.
- * /
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
 
-[= Типа "число"] :: - WebKit-внутренн-спин-кнопка,
-[Type = "number"] :: - webkit-external-spin-button {
-  Высота: авто;
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
 }
 
-/ **
- * 1. Исправить странный внешний вид в Chrome и Safari.
- * 2. Исправьте стиль в Safari.
- * /
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
 
-[Type = "search"] {
-  -webkit-appearance: текстовое поле; / * 1 * /
-  Outline-offset: -2px; / * 2 * /
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
-/ **
- * Удалите внутренние кнопки заполнения и отмены в Chrome и Safari на macOS.
- * /
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
 
-[Тип = "поиск"] :: - WebKit-розыскную-отменить кнопку,
-[Type = "search"] :: - webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/ **
- * 1. Исправьте неспособность стилировать интерактивные типы в iOS и Safari.
- * 2. Измените свойства шрифта на `inherit` в Safari.
- * /
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
 
-:: - webkit-file-upload-button {
-  -webkit-appearance: кнопка; / * 1 * /
-  Font: inherit; / * 2 * /
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
-/ * Интерактивный
-   ================================================== ======================== * *
+/* Interactive
+   ========================================================================== */
 
-/ *
- * Добавить правильный дисплей в IE 9-.
- * 1. Добавьте правильный дисплей в Edge, IE и Firefox.
- * /
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
 
-Подробности, / * 1 * /
-Меню {
-  Display: block;
+details, /* 1 */
+menu {
+  display: block;
 }
 
-/ *
- * Добавьте правильный дисплей во все браузеры.
- * /
+/*
+ * Add the correct display in all browsers.
+ */
 
-резюме {
-  Display: list-item;
+summary {
+  display: list-item;
 }
 
-/ * Сценарии
-   ================================================== ======================== * *
+/* Scripting
+   ========================================================================== */
 
-/ **
- * Добавить правильный дисплей в IE 9-.
- * /
+/**
+ * Add the correct display in IE 9-.
+ */
 
-Холст {
-  Display: inline-block;
+canvas {
+  display: inline-block;
 }
 
-/ **
- * Добавить правильный экран в IE.
- * /
+/**
+ * Add the correct display in IE.
+ */
 
-Шаблон {
-  Display: none;
+template {
+  display: none;
 }
 
-/ * Скрыто
-   ================================================== ======================== * *
+/* Hidden
+   ========================================================================== */
 
-/ **
- * Добавить правильный дисплей в IE 10-.
- * /
+/**
+ * Add the correct display in IE 10-.
+ */
 
-[Скрыто] {
-  Display: none;
+[hidden] {
+  display: none;
 }
