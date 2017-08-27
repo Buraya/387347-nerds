@@ -12,17 +12,17 @@
       <section class="container">
         <nav class="main-navigation">
           <a class="main-logo"  href="index.html">
-            <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизан студии Nёrds">
+            <img class="navigation-logo" src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизан студии Nёrds">
           </a>
           <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
+            <li><a class="site-navigation-item" href="#">Студия</a></li>
+            <li><a class="site-navigation-item" href="#">Клиенты</a></li>
             <li class="navigation-current"><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="site-navigation-item" href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="user-navigation">
-          <li><a href="#">Корзина</a></li>
+          <li><a class="user-navigation-item" href="#">Корзина</a></li>
         </ul>
       </section>
     </header>
@@ -50,11 +50,11 @@
                 <span class="title-grid-item"></span>
                 Фиксированная
               </label>
-              <label class="grid-item">
-                <input type="radio" name="grid" value="gum">
+              <label class="grid-item-disabled">
+                <input type="radio" name="grid" value="gum" disabled>
                 <span class="title-grid-item"></span>
                 Резиновая
-              </label class="grid-item">
+              </label>
             </div>
             <div class="filter-part">
               <b class="title-mini">Особенности:</b>
@@ -72,8 +72,8 @@
                 <input type="checkbox" name="features[]" value="news" checked>
                 <span class="title-features-item"></span>
                 Новости
-              </label class="features-item">
-              <label>
+              </label>
+              <label class="features-item">
                 <input type="checkbox" name="features[]" value="gallery">
                 <span class="title-features-item"></span>
                 Галерея
@@ -93,7 +93,7 @@
             <h3 class="visually-hidden">Сортировка</h3>
             <b class="title-mini">Сортировать:</b>
             <ul class="sort-list">
-              <li class="sort-current"><a class="sort-item" href="#">По цене</a></li>
+              <li class="sort-current"><a href="#">По цене</a></li>
               <li><a class="sort-item" href="#">По типу</a></li>
               <li><a class="sort-item" href="#">По названию</a></li>
             </ul>
@@ -105,7 +105,7 @@
           <ul class="catalog-list">
             <li>
               <article  class="catalog-item">
-                <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+                <img class="catalog-item-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">Sedona</h3>
@@ -117,7 +117,7 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+                <img class="catalog-item-img" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">Pink App</h3>
@@ -129,7 +129,7 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+                <img class="catalog-item-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">Barbershop</h3>
@@ -141,7 +141,7 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
+                <img class="catalog-item-img" src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">MISHKA</h3>
@@ -153,7 +153,7 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+                <img class="catalog-item-img" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">A Plus</h3>
@@ -165,7 +165,7 @@
             </li>
             <li>
               <article  class="catalog-item">
-                <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
+                <img class="catalog-item-img" src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
                 <div class="catalog-item-hover">
                   <a href="#">
                     <h3 class="title-catalog-item">КВАСТ</h3>

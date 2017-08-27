@@ -15,7 +15,16 @@ a{
   color: #000000;
 }
 
-li{
+.site-navigation li,
+.user-navigation li,
+.product-item,
+.work-item,
+.portfolio-item,
+.social-list li,
+.sort-list li,
+.sort-order-list li,
+.catalog-list,
+.pagination-list li{
   list-style: none;
 }
 
@@ -36,11 +45,16 @@ li{
   text-transform: uppercase;
 }
 
+.main-header,
+.slider{
+  background-color: #eee;
+}
+
 .title-big{
   font-size: 55px;
 }
 
-/*.title-product-types{
+.title-product-types{
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -91,15 +105,15 @@ li{
   opacity: 0.3;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus{
+.site-navigation-item:hover,
+.site-navigation-item:focus,
+.user-navigation-item:hover,
+.user-navigation-item:focus{
   color: #fb565a;
 }
 
-.site-navigation a:active,
-.user-navigation a:active{
+.site-navigation-item:active,
+.user-navigation-item:active{
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -203,6 +217,12 @@ li{
   color: #000000;
 }
 
+.catalog-header{
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eeeeee;
+}
+
 .product-type-price{
   text-transform: uppercase;
   text-align: center;
@@ -226,6 +246,7 @@ li{
   color: #d7dcde;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  background-color: white;
 }
 
 .letter input:hover,
@@ -239,4 +260,113 @@ li{
   color: #000000;
   border: 2px solid #000000;
   outline: none;
+}
+
+/*.letter input[type=text]:focus:invalid,
+.letter input[type=email]:focus:invalid,
+.letter textarea:focus:invalid{
+  line-height: 1.13;
+  color: red;
+  border: 2px solid red;
+  border-radius: 3px;
+  background-color: white;
 }*/
+
+.title-letter-item-invalid{
+  color: #e74246;
+  font-weight: 700;
+}
+
+.letter-item-invalid input[type="text"]{
+  border: 2px solid #e74246;
+}
+
+.letter input[type="text"]::-webkit-input-placeholder,
+.letter input[type="email"]::-webkit-input-placeholder,
+.letter textarea::-webkit-input-placeholder{
+  color: #d7dcde;
+}
+.letter input[type="text"]::-moz-placeholder,
+.letter input[type="email"]::-moz-placeholder,
+.letter textarea::-moz-placeholder{
+   color: #d7dcde;
+}
+
+.letter input[type="text"]:hover::-webkit-input-placeholder,
+.letter input[type="email"]:hover::-webkit-input-placeholder,
+.letter textarea:hover::-webkit-input-placeholder{
+  color: #b4b9b6;
+}
+.letter input[type="text"]:hover::-moz-placeholder,
+.letter input[type="email"]:hover::-moz-placeholder,
+.letter textarea:hover::-moz-placeholder{
+   color: #b4b9b6;
+}
+
+.letter input[type="text"]:focus::-webkit-input-placeholder,
+.letter input[type="email"]:focus::-webkit-input-placeholder,
+.letter textarea:focus::-webkit-input-placeholder{
+  color: #000000;
+}
+.letter input[type="text"]:focus::-moz-placeholder,
+.letter input[type="email"]:focus::-moz-placeholder,
+.letter textarea:focus::-moz-placeholder{
+   color: #000000;
+}
+
+.letter-item-invalid input[type="text"]::-webkit-input-placeholder,
+.letter-item-invalid input[type="email"]::-webkit-input-placeholder,
+.letter-item-invalid textarea::-webkit-input-placeholder{
+  color: red;
+}
+.letter-item-invalid input[type="text"]::-moz-placeholder,
+.letter-item-invalid input[type="email"]::-moz-placeholder,
+.letter-item-invalid textarea::-moz-placeholder{
+  color: red;
+}
+
+/*.letter input[type="text"]:focus:invalid::-webkit-input-placeholder,
+.letter input[type="email"]:focus:invalid::-webkit-input-placeholder,
+.letter textarea:focus:invalid::-webkit-input-placeholder{
+  color: red;
+}
+ .letter input[type="text"]:focus:invalid::-moz-placeholder,
+ .letter input[type="email"]:focus:invalid::-moz-placeholder,
+ .letter textarea:focus:invalid::-moz-placeholder{
+   color: red;
+}*/
+
+.map-img{
+  background-color: #eee;
+}
+.catalog-item-img{
+  background-color: #e9e9e9;
+}
+.catalog-item-img:hover{
+  background-color: #4d4d4d;
+}
+.catalog-item-hover{
+  text-align: center;
+  background-color: #e9e9e9;
+}
+
+.grid-item,
+.features-item{
+  color: #283136;
+}
+
+.grid-item:hover,
+.features-item:hover,
+.grid-item:focus,
+.features-item:focus{
+  color: #000;
+}
+
+.filter .grid-item-disabled{
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.filter input[type="radio"]:disabled,
+.filter input[type="checkbox"]:disabled{
+  color: rgba(40, 49, 54, 0.3);
+}
