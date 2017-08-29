@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Nёrd's</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <section class="container">
-        <nav class="main-navigation">
-          <a class="main-logo">
-            <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизан студии Nёrds">
-          </a>
-          <ul class="site-navigation">
-            <li><a class="site-navigation-item" href="#">Студия</a></li>
-            <li><a class="site-navigation-item" href="#">Клиенты</a></li>
-            <li><a class="site-navigation-item" href="catalog.html">Магазин</a></li>
-            <li><a class="site-navigation-item" href="#">Контакты</a></li>
+        <div class="header-wrapper">
+          <nav class="main-navigation">
+            <a class="main-logo">
+              <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизан студии Nёrds">
+            </a>
+            <ul class="site-navigation">
+              <li><a class="site-navigation-item" href="#">Студия</a></li>
+              <li><a class="site-navigation-item" href="#">Клиенты</a></li>
+              <li><a class="site-navigation-item" href="catalog.html">Магазин</a></li>
+              <li><a class="site-navigation-item" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="user-navigation">
+            <li><a class="user-navigation-item" href="#">Корзина</a></li>
           </ul>
-        </nav>
-        <ul class="user-navigation">
-          <li><a class="user-navigation-item" href="#">Корзина</a></li>
-        </ul>
+        </div>
       </section>
     </header>
     <main>
@@ -100,14 +102,14 @@
             </b>
             <table class="statistics-table">
               <tr class="print-rows">
-                <td>146<span>%</span></td>
-                <td>100<span>%</span></td>
-                <td>50<span>%</span></td>
+                <td class="col">146<span class="decoratin-persent">%</span></td>
+                <td class="col">100<span class="decoratin-persent">%</span></td>
+                <td class="col">50<span class="decoratin-persent">%</span></td>
               </tr>
               <tr>
-                <td class="print-mini">Уровень самоотдачи</td>
-                <td class="print-mini">Соблюдение сроков</td>
-                <td class="print-mini">Минимальная предоплата</td>
+                <td class="print-mini col">Уровень самоотдачи</td>
+                <td class="print-mini col">Соблюдение сроков</td>
+                <td class="print-mini col">Минимальная предоплата</td>
               </tr>
             </table>
           </div>
@@ -147,7 +149,7 @@
               </p>
               <a class="button letter-button" href="#">Напишите нам</a>
             </div>
-          </div>
+        </div>
         </div>
       </section>
       <div class="footer-social container">
