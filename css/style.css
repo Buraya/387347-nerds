@@ -161,6 +161,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button{
+  display: inline-block;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -170,6 +171,7 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+
 
   -webkit-transition: background-color .2s ease-out .2s;
   -moz-transition: background-color .2s ease-out .2s;
@@ -263,9 +265,12 @@ input[type="radio"].visually-hidden {
 }
 
 .product-type-price{
+  display: inline-block;
+  position: relative;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-bottom:43px;
 
   background-color: #fb565a;
   border-radius: 3px;
@@ -368,12 +373,6 @@ input[type="radio"].visually-hidden {
   color: #e74246;
 }
 
-.map-img{
-  background-color: #eee;
-}
-.catalog-item-img{
-  background-color: #e9e9e9;
-}
 .catalog-item-img:hover{
   background-color: #4d4d4d;
 }
@@ -403,7 +402,7 @@ input[type="radio"].visually-hidden {
   color: rgba(40, 49, 54, 0.3);
 }
 
-/*Сетка*/
+/*---------------------Сетка--------------------------*/
 
 .container{
   width: 1160px;
@@ -415,69 +414,93 @@ input[type="radio"].visually-hidden {
 
 .header-wrapper{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 50px;
 
-  outline: 1px solid yellow;
+  outline: 3px solid yellow;
 }
 
 .main-navigation{
   display: flex;
-  max-width: 860px;
+  flex-direction: row;
+  width: 860px;
 
   outline: 1px solid red;
 }
 
 .site-navigation{
   display: flex;
-  padding-left: 0px;
+  flex-direction: row;
+  justify-content: space-between;
 
   outline: 1px solid green;
+}
+
+.site-navigation-item{
+  display: block;
+  padding: 10px 25px;
+  margin-left: 10px;
+  vertical-align: middle;
+
+  outline: 2px solid red;
 }
 
 .user-navigation{
   display: flex;
   flex-direction: row-reverse;
-  width: 200px;
+  width: 160px;
+  margin-top: 0px;
+  padding-top: 10px;
 
-  outline: 1px solid red;
+  outline: 1px solid grey;
 }
 
 .top-part-main{
-  outline: 1px solid red;
   margin-bottom:80px;
+
+  height: 419px; /*временно*/
+  outline: 1px solid red;
+}
+
+.slide-nomber:nth-child(2),
+.slide-nomber:nth-child(3){
+	display: none;
 }
 
 .product-list{
   display: flex;
+  flex-direction: rows;
+  margin-bottom: 80px;
   padding-left: 0px;
   padding-top: 0px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #eee;
-
-  outline: 1px solid red;
-}
-
-.product-item{
-  width: 300px;
-  margin-right: 100px;
-  padding-top: 170px;
-  padding-bottom: 78px;
 
   outline: 1px solid green;
 }
 
-.product-item:nth-child(3n){
+.product-item{
   width: 300px;
+  margin-top: 0px;
+  margin-right: 100px;
+  padding-top: 175px;
+  padding-bottom: 0px;
+
+  outline: 1px solid grey;
+}
+
+.product-item:nth-child(3n){
+  margin-right: 0px;
 }
 
 .about-studio{
   display: flex;
   justify-content: space-between;
-  padding-top: 0px;
-  margin-bottom: 75px;
+  margin-bottom: 76px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  border-top: 2px solid #eee;
 
-  outline: 1px solid red;
+  outline: 1px solid green;
 }
 
 .about-studio-text{
@@ -513,7 +536,10 @@ input[type="radio"].visually-hidden {
 
 .portfolio-list{
   display: flex;
-  padding: 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding:0px;
   margin-bottom: 80px;
 
   outline: 1px solid red;
@@ -521,21 +547,33 @@ input[type="radio"].visually-hidden {
 
 .portfolio-item{
   /*временно*/
-  width: 290px;
+  width: 280px;
   height: 180px;
+
 
   outline: 1px solid green;
 }
 
+.portfolio-list:first-child{
+	margin-left: 0px;
+}
+.portfolio-list:nth-child(4n){
+	margin-right: 0px;
+}
+
+
 .map{
+  display: block;
   position: relative;
   overflow: hidden;
   z-index:0;
   padding-top: 47px;
   padding-bottom: 54px;
+  margin-bottom: 69px;
 }
 
 .map-img{
+  display: block;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -558,15 +596,17 @@ input[type="radio"].visually-hidden {
 .footer-social{
   display: flex;
   justify-content:space-between;
-  padding-top: 70px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 
   outline: 1px solid red;
 }
 
 .social-list{
   display: flex;
-  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  margin-right: 40px;
 
   outline: 1px solid green;
   width: 260px;
@@ -574,6 +614,7 @@ input[type="radio"].visually-hidden {
 
 .footer-autlet{
   width: 760px;
+  margin: 0px;
 }
 
 .modal-window{
@@ -585,6 +626,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-header{
+  display: block;
   text-align: center;
   padding-top: 57px;
   padding-bottom: 95px;
