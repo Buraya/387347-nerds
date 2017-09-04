@@ -94,15 +94,17 @@
           <div class="sort">
             <h3 class="visually-hidden">Сортировка</h3>
             <b class="title-mini">Сортировать:</b>
-            <ul class="sort-list">
-              <li class="sort-current"><a href="#">По цене</a></li>
-              <li><a class="sort-item" href="#">По типу</a></li>
-              <li><a class="sort-item" href="#">По названию</a></li>
-            </ul>
-            <ul class="sort-order-list">
-              <li><a class="sort-order-item sort-up sort-current" href="#" aria-label="По возрастанию"></a></li>
-              <li><a class="sort-order-item sort-down" href="#" aria-label="По убыванию"></a></li>
-            </ul>
+            <div class="sort-wrapper">
+              <ul class="sort-list">
+                <li class="sort-current"><a href="#">По цене</a></li>
+                <li><a class="sort-item" href="#">По типу</a></li>
+                <li><a class="sort-item" href="#">По названию</a></li>
+              </ul>
+              <ul class="sort-order-list">
+                <li><a class="sort-order-item sort-up-current" href="#" aria-label="По возрастанию"></a></li>
+                <li><a class="sort-order-item sort-down" href="#" aria-label="По убыванию"></a></li>
+              </ul>
+            </div>
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -179,15 +181,15 @@
             </li>
           </ul>
           <ol class="pagination-list">
-            <li class="pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+            <li><a class="pagination-item-current">1</a></li>
+            <li><a class="pagination-item" href="#">2</a></li>
+            <li><a class="pagination-item" href="#">3</a></li>
+            <li><a class="pagination-item pagination-next" href="#">Следующая</a></li>
           </ol>
         </section>
       </div>
     </main>
-<footer class="main-footer">
+    <footer class="main-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="map">
@@ -199,7 +201,7 @@
                 ул. Б.Конюшенная, д.19/8
               </p>
               <p>
-                <a class="print-mini" href="tel:+78122757575">+7 (812) 275-75-75</a>
+                <a class="print-mini" href="tel:+78122757575">+7(812)275-75-75</a>
               </p>
               <a class="button letter-button" href="#">Напишите нам</a>
             </div>
@@ -208,9 +210,9 @@
       </section>
       <div class="footer-social container">
         <ul class="social-list">
-          <li><a class="social-button" href="#" aria-label="VK"></a></li>
-          <li><a class="social-button" href="#" aria-label="Facebook"></a></li>
-          <li><a class="social-button" href="#" aria-label="Instagram"></a></li>
+          <li><a class="social-button button-vk" href="#" aria-label="VK"></a></li>
+          <li><a class="social-button button-facebook" href="#" aria-label="Facebook"></a></li>
+          <li><a class="social-button button-instagram" href="#" aria-label="Instagram"></a></li>
         </ul>
         <p class="footer-autlet">
           <b class="title-middle title-autlet">Давайте дружить, это выгодно!</b>
