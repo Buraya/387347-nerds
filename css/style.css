@@ -90,6 +90,7 @@ input[type="radio"].visually-hidden {
 
 .title-big{
   font-size: 55px;
+  line-height: 1;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -493,13 +494,99 @@ input[type="radio"].visually-hidden {
 .top-part-main{
   margin-bottom:80px;
 
-  height: 418px; /*временно*/
   outline: 1px solid red;
+}
+
+.slider{
+  display: flex;
+  position: relative;
+}
+
+.slides-wrapper{
+  display: flex;
+}
+
+.slide-nomber{
+  display: flex;
+  flex-direction: column;
+  padding-right:640px;
+  padding-top: 64px;
+}
+
+.slide-text{
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
+.button-slide{
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  padding: 13px 55px;
+}
+
+.slides-controls{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 240px;
+  height: 18px;
+  bottom: 96px;
+  left: 480px;
+
+  outline: 1px solid red;
+}
+
+.slides-dot{
+  display: inline-block;
+  margin-right: 17px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.slides-dot:last-child{
+  margin-right: 0px;
+}
+
+.slides-dot-current{
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.slides-dot-current::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 4px;
+  right:4px;
+  border: 2px solid grey;
+  border-radius: 50%;
 }
 
 .slide-nomber:nth-child(2),
 .slide-nomber:nth-child(3){
-	display: none;
+  display: none;
+}
+
+.slide-nomber:nth-child(1){
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat:no-repeat;
+  background-position: 100% 100%;
+}
+
+.slide-nomber:nth-child(2){
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat:no-repeat;
+}
+
+.slide-nomber:nth-child(3){
+  background-image: url("../img/nerds-index-slide3.png");
+  background-repeat:no-repeat;
 }
 
 .product-list{
@@ -633,9 +720,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
-
-
-  /*outline: 1px solid red;*/
 }
 
 .portfolio-item{
@@ -885,8 +969,8 @@ input[type="radio"].visually-hidden {
 .catalog-header{
   display: block;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 95px;
+  padding-top: 64px;
+  padding-bottom: 109px;
   background-color: #eeeeee;
   margin-bottom: 55px;
 }
@@ -916,6 +1000,23 @@ input[type="radio"].visually-hidden {
 
   outline: 1px solid green;
 }
+
+.grid-item{
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.grid-item input[type="radio"] + .print-grid-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-on.svg);
+}
+
 
 .sort{
   display: flex;
@@ -1113,8 +1214,6 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover .catalog-item-hover{
   opacity: 1;
   visibility: visible;
-
-  box-shadow: 0 5px 10px rgba(0,0,0,.35)
 }
 
 .catalog-item:hover{
@@ -1123,6 +1222,7 @@ input[type="radio"].visually-hidden {
   border-left: 1px solid rgba(0,0,0,.12);
   border-right: 1px solid rgba(0,0,0,.12);
   border-bottom: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 5px 10px rgba(0,0,0,.35)
   /*border: none;*/
 }
 
@@ -1134,33 +1234,31 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   padding-left: 0px;
+  margin-top: 10px;
   margin-bottom: 60px;
-
-  outline: 2px solid green;
 }
 
 .pagination-item{
   display: inline-block;
   margin-right: 12px;
-  width: 46px;
+  width: 50px;
   line-height: 0px;
   margin-right: 12px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
   background-color: #eee;
-  border: 2px solid #eee;
   border-radius: 3px;
 }
 
 .pagination-item-current{
   display: inline-block;
   margin-right: 12px;
-  width: 46px;
+  width: 50px;
   line-height: 0px;
   margin-right: 12px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   text-align: center;
   background-color: white;
   border: 2px solid #bdbdbd;
@@ -1171,12 +1269,12 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin-right: 12px;
   width: 256px;
-  line-height: 0px;
+  line-height: 1;
+  text-transform: uppercase;
   margin-right: 12px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: center;
   background-color: #eee;
-  border: 2px solid #eee;
   border-radius: 3px;
 }
