@@ -38,6 +38,25 @@
           <form class="filter" action="#" method="get">
             <div class="filter-part">
               <b class="title-mini">Стоимость:</b>
+              <div class="filter-price">
+                <div class="filter-range-controls">
+                  <div class="range-full">
+                    <div class="range-select"></div>
+                    <div class="toogle toogle-min"></div>
+                    <div class="toogle toogle-max"></div>
+                  </div>
+                </div>
+                <div class="filter-price-controls">
+                  <label class="price-min">
+                    От
+                    <input name="price-min" type="text" value="0">
+                  </label>
+                  <label class="price-max">
+                    До
+                    <input name="price-max" type="text" value="15 000">
+                  </label>
+                </div>
+              </div>
               <!-- Добавить фильтр-диапозон-->
             </div>
             <div class="filter-part">
@@ -52,36 +71,36 @@
                 <span class="print-grid-item"></span>
                 Фиксированная
               </label>
-              <label class="grid-item-disabled">
+              <label class="grid-item">
                 <input type="radio" name="grid" value="gum" class="visually-hidden">
                 <span class="print-grid-item"></span>
                 Резиновая
               </label>
             </div>
             <div class="filter-part">
-              <b class="title-mini">Особенности:</b>
+              <b class="title-mini block-features">Особенности:</b>
               <label class="features-item">
-                <input type="checkbox" name="features[]" value="slider" checked>
+                <input type="checkbox" name="features[]" value="slider" class="visually-hidden" checked>
                 <span class="print-features-item"></span>
                 Слайдер
               </label>
               <label class="features-item">
-                <input type="checkbox" name="features[]" value="block-advantage">
+                <input type="checkbox" name="features[]" value="block-advantage" class="visually-hidden">
                 <span class="print-features-item"></span>
                 Блок преимуществ
               </label>
               <label class="features-item">
-                <input type="checkbox" name="features[]" value="news" checked>
+                <input type="checkbox" name="features[]" value="news" class="visually-hidden" checked>
                 <span class="print-features-item"></span>
                 Новости
               </label>
               <label class="features-item">
-                <input type="checkbox" name="features[]" value="gallery">
+                <input type="checkbox" name="features[]" value="gallery" class="visually-hidden">
                 <span class="print-features-item"></span>
                 Галерея
               </label>
-              <label class="features-item">
-                <input type="checkbox" name="features[]" value="basket">
+              <label class="features-item-disabled">
+                <input type="checkbox" name="features[]" value="basket" class="visually-hidden" disabled>
                 <span class="print-features-item"></span>
                 Корзина
               </label>
@@ -111,7 +130,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">Sedona</h3>
                     <p class="product-type print-mini">Информационный сайт для туристов</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
@@ -123,7 +142,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">Pink App</h3>
                     <p class="product-type print-mini">Продуктовый лендинг приложения для iOS и&nbsp;Android</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
@@ -135,7 +154,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">Barbershop</h3>
                     <p class="product-type print-mini">Сайт салоны красоты. Для мужчин, да.</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
@@ -147,7 +166,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">MISHKA</h3>
                     <p class="product-type print-mini">Интернет-магазин вязаных игрушек</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
@@ -159,7 +178,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">A Plus</h3>
                     <p class="product-type print-mini">Лендинг курсов повышения квалификации</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
@@ -171,7 +190,7 @@
               <article>
                 <img class="catalog-item-img" src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
                 <div class="catalog-item-hover">
-                  <a href="#">
+                  <a href="#" class="info-catalog-item">
                     <h3 class="title-catalog-item">КВАСТ</h3>
                     <p class="product-type print-mini">Промо-сайт производителя крафтового кваса</p>
                     <div class="product-type-price">9&nbsp;900&nbsp;Руб.</div>
