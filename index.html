@@ -13,7 +13,7 @@
         <div class="header-wrapper">
           <nav class="main-navigation">
             <a class="main-logo">
-              <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизан студии Nёrds">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизан студии Nёrds">
             </a>
             <ul class="site-navigation">
               <li><a class="site-navigation-item" href="#">Студия</a></li>
@@ -33,17 +33,17 @@
       <section class="top-part-main">
         <div class="slider container">
           <div class="slides-wrapper">
-            <div class="slide-nomber">
+            <div class="slide-number">
               <b class="title-big">Долго, дорого, скрупулезно.</b>
               <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
               <a class="button button-slide" href="#">Узнать больше</a>
             </div>
-            <div class="slide-nomber">
+            <div class="slide-number">
               <b class="title-big">Любим математику как никто другой</b>
               <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
               <a class="button button-slide" href="#">Узнать больше</a>
             </div>
-            <div class="slide-nomber">
+            <div class="slide-number">
               <b class="title-big">Только ночь, только хардкор</b>
               <p class="slide-text">Работать днем, как все? Мы&nbsp;против этого. Ближе к&nbsp;полуночи работа только начинается.</p>
               <a class="button button-slide" href="#">Узнать больше</a>
@@ -82,39 +82,41 @@
         </section>
         <section class="about-studio">
           <h2 class="visually-hidden">Немного о студии</h2>
-          <div class="about-studio-text">
-            <b class="tittle-about-studio">
-              Мы&nbsp;&mdash; маленькая, но&nbsp;гордая дизайн-студия из&nbsp;Краснодара.
-            </b>
-            <p>Исповедуем принципы минимализма и&nbsp;чистоты. Ставим математический расчет превыше креатива. Работаем не&nbsp;покладая рук, как роботы.</p>
-            <b class="title-bold">
-              Выполняем заказы на разработку:
-            </b>
-            <ul class="work-list">
-              <li class="work-item">Веб-сайтов любой сложности</li>
-              <li class="work-item">Мобильных приложений для iOS и&nbsp;Android</li>
-              <li class="work-item">Слайдшоу и&nbsp;видео для корпоративных презентаций</li>
-            </ul>
-          </div>
-          <div class="statistics">
-            <b class="title-bold">
-              С&nbsp;2004 года любим точность во&nbsp;всем:
-            </b>
-            <dl class="statistics-table">
-              <div class="table-wrap">
-                <dt class="print-mini">Уровень самоотдачи</dd>
-                <dd class="persent">146<span class="decoratin-persent">%</span></dt>
-              </div>
-              <div class="table-wrap">
-                <dt class="print-mini">Соблюдение сроков</dd>
-                <dd class="persent">100<span class="decoratin-persent">%</span></dt>
-              </div>
-              <div class="table-wrap">
-                <dt class="print-mini">Минимальная предоплата</dd>
-                <dd class="persent">50<span class="decoratin-persent">%</span></dt>
-              </div>
-            </dl> 
-          </div>
+		    <div class="about-studio-wrapper">
+			  <div class="about-studio-text">
+				<b class="tittle-about-studio">
+				  Мы&nbsp;&mdash; маленькая, но&nbsp;гордая дизайн-студия из&nbsp;Краснодара.
+				</b>
+				<p>Исповедуем принципы минимализма и&nbsp;чистоты. Ставим математический расчет превыше креатива. Работаем не&nbsp;покладая рук, как роботы.</p>
+				<b class="title-bold">
+				  Выполняем заказы на разработку:
+				</b>
+				<ul class="work-list">
+				  <li class="work-item">Веб-сайтов любой сложности</li>
+				  <li class="work-item">Мобильных приложений для iOS и&nbsp;Android</li>
+				  <li class="work-item">Слайдшоу и&nbsp;видео для корпоративных презентаций</li>
+				</ul>
+			  </div>
+			  <div class="statistics">
+				<b class="title-bold">
+				  С&nbsp;2004 года любим точность во&nbsp;всем:
+				</b>
+				<dl class="statistics-table">
+				  <div class="table-wrap">
+					<dt class="print-mini">Уровень самоотдачи</dt>
+					<dd class="persent">146<span class="decoratin-persent">%</span></dd>
+				  </div>
+				  <div class="table-wrap">
+					<dt class="print-mini">Соблюдение сроков</dt>
+					<dd class="persent">100<span class="decoratin-persent">%</span></dd>
+				  </div>
+				  <div class="table-wrap">
+					<dt class="print-mini">Минимальная предоплата</dt>
+					<dd class="persent">50<span class="decoratin-persent">%</span></dd>
+				  </div>
+				</dl> 
+			  </div>
+			</div>
         </section>
       </div>
       <section class="bottom-part-main container">
@@ -172,7 +174,7 @@
       <form action="#" method="post" class="letter">
         <p class="letter-item">
           <label class="title-letter-item">Ваше имя:
-            <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+            <input type="text" name="user-name" value="" placeholder="Представьтесь, пожалуйста" required>
           </label>
         </p>
         <p class="letter-item">
@@ -190,5 +192,21 @@
       </form>
     </section>
 
+	<script>
+		var link = document.querySelector(".letter-button");
+		var popup = document.querySelector(".modal-window");
+		var close = popup.querySelector(".close-button");
+		var login = popup.querySelector("[name=user-name]");
+
+		link.addEventListener("click", function (evt){
+			evt.preventDefault();
+			popup.classList.add("modal-show");
+			login.focus();
+		});
+		close.addEventListener("click", function (evt){
+			evt.preventDefault();
+			popup.classList.remove("modal-show");
+		});
+	</script>
   </body>
 </html>
