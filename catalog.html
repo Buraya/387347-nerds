@@ -15,14 +15,14 @@
             <a class="main-logo"  href="index.html">
               <img class="navigation-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизан студии Nёrds">
             </a>
-            <ul class="site-navigation">
+            <ul class="site-navigation list-reset">
               <li><a class="site-navigation-item" href="#">Студия</a></li>
               <li><a class="site-navigation-item" href="#">Клиенты</a></li>
-              <li class="navigation-current"><a href="catalog.html">Магазин</a></li>
+              <li><a class="site-navigation-item navigation-current">Магазин</a></li>
               <li><a class="site-navigation-item" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="user-navigation">
+          <ul class="user-navigation list-reset">
             <li><a class="user-navigation-item" href="#">Корзина</a></li>
           </ul>
         </div>
@@ -57,8 +57,7 @@
                   </label>
                 </div>
               </div>
-              <!-- Добавить фильтр-диапозон-->
-            </div>
+              </div>
             <div class="filter-part">
               <b class="title-mini block-grid">Сетка:</b>
               <label class="grid-item">
@@ -99,8 +98,8 @@
                 <span class="print-features-item"></span>
                 Галерея
               </label>
-              <label class="features-item-disabled">
-                <input type="checkbox" name="features[]" value="basket" class="visually-hidden" disabled>
+              <label class="features-item">
+                <input type="checkbox" name="features[]" value="basket" class="visually-hidden">
                 <span class="print-features-item"></span>
                 Корзина
               </label>
@@ -114,18 +113,18 @@
             <h3 class="visually-hidden">Сортировка</h3>
             <b class="title-mini">Сортировать:</b>
             <div class="sort-wrapper">
-              <ul class="sort-list">
+              <ul class="sort-list list-reset">
                 <li class="sort-current"><a href="#">По цене</a></li>
                 <li><a class="sort-item" href="#">По типу</a></li>
                 <li><a class="sort-item" href="#">По названию</a></li>
               </ul>
               <ul class="sort-order-list">
-                <li><a class="sort-order-item sort-up-current" href="#" aria-label="По возрастанию"></a></li>
-                <li><a class="sort-order-item sort-down" href="#" aria-label="По убыванию"></a></li>
+                <li class="list-reset"><a class="sort-order-item sort-up-current" href="#" aria-label="По возрастанию"></a></li>
+                <li class="list-reset"><a class="sort-order-item sort-down" href="#" aria-label="По убыванию"></a></li>
               </ul>
             </div>
           </div>
-          <ul class="catalog-list">
+          <ul class="catalog-list list-reset">
             <li class="catalog-item">
               <article>
                 <img class="catalog-item-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -199,11 +198,11 @@
               </article>
             </li>
           </ul>
-          <ol class="pagination-list">
+          <ol class="pagination-list list-reset">
             <li><a class="pagination-item-current">1</a></li>
             <li><a class="pagination-item button-grey" href="#">2</a></li>
             <li><a class="pagination-item button-grey" href="#">3</a></li>
-            <li><a class="pagination-item pagination-next button-grey" href="#">Следующая</a></li>
+            <li><a class="pagination-item pagination-direction button-grey" href="#">Следующая</a></li>
           </ol>
         </section>
       </div>
@@ -215,12 +214,12 @@
           <img class="map-img" src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
           <div class="container">
             <div class="contacts-list">
-              <b class="title-mini">Nёrds design studio</b>
+              <b class="title-mini tittle-contacts-list">Nёrds design studio</b>
               <p class="print-mini">191186, Санкт-Петербург,<br>
                 ул. Б.Конюшенная, д.19/8
               </p>
               <p>
-                <a class="print-mini" href="tel:+78122757575">+7(812)275-75-75</a>
+                <a class="print-mini" href="tel:+78122757575">тел. +7&nbsp;(812)&nbsp;275-75-75</a>
               </p>
               <a class="button letter-button" href="#">Напишите нам</a>
             </div>
@@ -228,7 +227,7 @@
         </div>
       </section>
       <div class="footer-social container">
-        <ul class="social-list">
+        <ul class="social-list list-reset">
           <li><a class="social-button button-vk" href="#" aria-label="VK"></a></li>
           <li><a class="social-button button-facebook" href="#" aria-label="Facebook"></a></li>
           <li><a class="social-button button-instagram" href="#" aria-label="Instagram"></a></li>
@@ -245,7 +244,7 @@
       <form action="#" method="post" class="letter">
         <p class="letter-item">
           <label class="title-letter-item">Ваше имя:
-            <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
+            <input type="text" name="user-name" value="" placeholder="Представьтесь, пожалуйста" required>
           </label>
         </p>
         <p class="letter-item">
@@ -255,13 +254,15 @@
         </p>
         <p class="letter-item">
           <label class="title-letter-item">Текст письма:<br>
-            <textarea name="text" rows="10" cols="100" placeholder="Текст письма" required></textarea>
+            <textarea name="text" rows="5" cols="89" placeholder="В свободной форме" required></textarea>
           </label>
         </p>
-        <button class="button button-red" type="submit">Отправить</button>
+        <button class="button button-red button-letter" type="submit">Отправить</button>
         <button class="close-button" type="button" aria-label="Закрыть"></button>
       </form>
     </section>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
