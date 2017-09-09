@@ -67,10 +67,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item,
 .user-navigation-item{
-  -webkit-transition: color .2s ease-out;
-  -moz-transition: color .2s ease-out;
-  -ms-transition: color .2s ease-out;
-  -o-transition: color .2s ease-out;
   transition: color .2s ease-out;
 }
 
@@ -197,10 +193,6 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
-  -webkit-transition: background-color .2s ease-out;
-  -moz-transition: background-color .2s ease-out;
-  -ms-transition: background-color .2s ease-out;
-  -o-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
 }
 
@@ -298,10 +290,6 @@ input[type="radio"].visually-hidden {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   background-color: white;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -ms-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
 
@@ -721,10 +709,6 @@ input[type="radio"].visually-hidden {
   height: 180px;
   background-repeat: no-repeat;
   opacity: 0.2;
-  -webkit-transition: opacity 0.5s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -ms-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
@@ -775,11 +759,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   z-index: -1;
   width: 100%;
-  min-width: 1440px;
-  min-height: 100%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
   border: none;
 }
 
@@ -791,8 +773,8 @@ input[type="radio"].visually-hidden {
   min-width: 1440px;
   min-height: 100%;
   top: 50%;
-  transform: translate(-50%, -50%);
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .contacts-list{
@@ -843,10 +825,6 @@ input[type="radio"].visually-hidden {
   height: 78px;
   background-color: #e1e1e1;
   border-radius: 50%;
-  -webkit-transition: background-color 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out;
-  -ms-transition: background-color 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
 }
 
@@ -1346,10 +1324,6 @@ input[type="radio"].visually-hidden {
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  -webkit-transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out, box-shadow 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
   transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
@@ -1375,10 +1349,6 @@ input[type="radio"].visually-hidden {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -ms-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
