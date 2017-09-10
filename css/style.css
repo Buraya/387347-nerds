@@ -39,14 +39,14 @@ html{
   box-sizing: inherit;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -204,16 +204,17 @@ input[type="radio"].visually-hidden {
 }
 
 .button:hover,
-.button:focus {
+.button:focus{
   background-color: #e74246;
 }
+
 .button:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
 
 .button-green:hover,
-.button-green:focus {
+.button-green:focus{
   background-color: #00bc6c;
 }
 
@@ -222,7 +223,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-yellow:hover,
-.button-yellow:focus {
+.button-yellow:focus{
   background-color: #eab533;
 }
 
@@ -899,7 +900,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 
-.modal-show {
+.modal-show{
   display: block;
 }
 
@@ -940,7 +941,6 @@ input[type="radio"].visually-hidden {
 
 .close-button{
   position: absolute;
-  content: "";
   width: 22px;
   height: 22px;
   top: 79px;
